@@ -1,0 +1,11 @@
+
+.Recip-Container{
+    border: solid rgb(237, 164, 164);
+    width: 30%;
+    margin:10px;
+    padding:10px;
+    background-color: rgb(221, 212, 206);
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
