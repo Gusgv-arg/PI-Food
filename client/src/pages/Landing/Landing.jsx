@@ -18,9 +18,10 @@ function Landing() {
 			Technologies used: <br />
 			1. Postgre SQL <br />
 			2. Sequelize <br />
-			3. React <br />
-			4. Redux <br />
-			5. CSS <br />
+			3. Node <br /> 
+			4. React <br />
+			5. Redux <br />
+			6. CSS <br />
 			</div> <br />
 			
 			<NavLink to="/home" >

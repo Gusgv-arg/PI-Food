@@ -17,19 +17,17 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
-const { conn } = require('./src/db.js');
-const {loadDiets, loadDishes} = require("../auxiliar/precargaBd.js")
+const server = require("./src/app.js");
+const { conn } = require("./src/db.js");
+const { loadDb } = require("./src/Charge/ChargeAllDb.js");
+
 // Syncing all the models at once.
-//force true elimina las tablas y las vuelve a crear como esten definidas en modelos 
+//force true elimina las tablas y las vuelve a crear como esten definidas en modelos
 //alter true modifica las tablas en base a la definicion de los modelos
 
 conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
-    console.log('%s listening at 3001');     // eslint-disable-line no-console    
-    loadDiets() //funcion q carga la base diets
-    loadDishes() //funcion que carga la base dishes
-    //loadRecipes()
+	server.listen(3001, () => {
+		console.log("%s listening at 3001"); // eslint-disable-line no-console
+		loadDb();
   });
 });
-

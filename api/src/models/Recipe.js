@@ -18,15 +18,14 @@ module.exports = (sequelize) => {
 				unique: true,
 			},
 			summary: {
-				type: DataTypes.TEXT,
-				//allowNull: false,
+				type: DataTypes.TEXT,				
 			},
 			healthScore: {
 				type: DataTypes.INTEGER,
-				/* validate: {
+				  validate: {
 					min: 0,
 					max: 100
-				} */
+				}  
 			},
 			analyzedInstructions: {
 				type: DataTypes.TEXT,

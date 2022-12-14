@@ -14,7 +14,6 @@ function Search() {
     } 
 
     const handleClick = (event)=>{
-        //event.prevent.default
         dispatch(getRecipeByName(search))
         setSearch("")
     }

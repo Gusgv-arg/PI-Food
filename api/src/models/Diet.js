@@ -25,8 +25,7 @@ module.exports = (sequelize) => {
 					"Ketogenic",
 					"Pescetarian",
 					"Other"
-				]),
-				//allowNull: false,
+				]),				
 			},
 		},
 		{ timestamps: false } //con esto evito agregue los datos de las fechas
